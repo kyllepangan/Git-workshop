@@ -17,7 +17,10 @@
  *      fibonacci(8); //21
  */
 int fibonacci(int k) {
-    //WRITE CODE HERE
+    if ((k == 0) || (k == 1)) {
+        return k;
+    }
+    return fibonacci(k-1) + fibonacci(k-2) ;
 
     return 0; // EDIT THIS
 }
